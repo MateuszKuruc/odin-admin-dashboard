@@ -5,7 +5,8 @@
 }
 
 body {
-  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
 }
 
 .mainBody {
@@ -15,7 +16,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 4fr;
 }
 
 .sidebar {
@@ -47,23 +48,50 @@ body {
     grid-row: 1 / 3;
 }
 
+h2 {
+font-size: 18px;
+margin-left: 16px;
+margin-top: 16px;
+}
+
 .projectSection {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .projectSection > div {
     height: 200px;
+    padding: 42px;
+    border-left: 10px solid gold;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.projectSection > div > p {
+    font-weight: 300;
 }
 
 .announcements {
     display: flex;
     flex-direction: column;
+    height: auto;
 }
 
 .trendGroup, .annGroup {
     flex: 1;
+}
+
+.trendGroup > div {
+    /* margin: 10%; */
+    padding: 16px;
+}
+
+.annGroup > div {
+    padding: 16px;
+   /* padding-top: 32px; */
+   padding-bottom: 32px;
+   border-bottom: 1px solid red;
+   margin: 10%;
 }
 
 .trending {
@@ -71,16 +99,11 @@ body {
    flex-direction: column;
 }
 
-.projectSection > div {
-    border-left: 5px solid red;
-}
-
 .projectSection > div, .trendGroup, .annGroup {
    display: grid;
     background-color: white;
-    border-radius: 10px;
-    padding: 5px;
-    gap: 8px;
+    border-radius: 16px;
+    /* gap: 8px; */
     margin: 16px;
 }
 
@@ -140,7 +163,6 @@ input {
 
 .userInfo {
     display: flex;
-    /* gap: 8px; */
     place-content: space-around;
 }
 
@@ -157,8 +179,10 @@ input {
 }
 
 .welcomeInfo {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
+    gap: 16px;
+    /* grid-template-columns: 1fr 3fr; */
+    
 }
 
 .welcomeInfo > img {
