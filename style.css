@@ -10,7 +10,6 @@ body {
 }
 
 .mainBody {
-    /* height: 80vh; */
     padding: 16px;
 }
 
@@ -38,8 +37,9 @@ body {
 }
 
 .mainBody {
-    background-color: rgb(234, 233, 233);
-    display: grid;
+    /* background-color: rgb(234, 233, 233); */
+background: linear-gradient(298deg, rgba(250,223,82,1) 30%, rgba(0,212,255,1) 100%);
+   display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
@@ -108,6 +108,7 @@ margin-top: 16px;
     border-radius: 16px;
     /* gap: 8px; */
     margin: 16px;
+    box-shadow: 9px 3px 7px 2px rgba(0, 0, 0, 1);
 }
 
 .dashboard {
@@ -116,7 +117,6 @@ margin-top: 16px;
     grid-template-columns: 1fr 6fr;
     align-items: start;
     gap: 8px;
-    /* justify-content: center; */
 }
 
 .dashboard > img {
@@ -131,7 +131,6 @@ margin-top: 16px;
 }
 
 .firstGroup > img, .secondGroup > img {
-    /* height: 36px; */
     position: relative;
     bottom: 5px;
 }
@@ -149,6 +148,7 @@ button {
 .searchBar {
     display: flex;
     gap: 4px;
+    padding-left: 16px;
 }
 
 .searchBar > img {
@@ -167,8 +167,6 @@ input {
 .userInfo {
     display: flex;
     place-content: space-around;
-    outline: 1px solid red;
-    /* max-width: 250px; */
 }
 
 .userInfo > p {
@@ -192,8 +190,7 @@ input {
 .welcomeInfo {
     display: flex;
     gap: 16px;
-    /* grid-template-columns: 1fr 3fr; */
-    
+    padding-left: 16px;
 }
 
 .welcomeInfo > img {
