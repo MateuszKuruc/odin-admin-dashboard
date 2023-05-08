@@ -1,7 +1,7 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -10,208 +10,237 @@ body {
 }
 
 .mainBody {
-    padding: 16px;
+  padding: 16px;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
 
 .sidebar {
-    display: grid;
-    grid-column: 1;
-    grid-row: 1;
-    background-color: rgb(101, 160, 224);
-    color: white;
-    padding: 8px;
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #7f1d1d;
+  color: white;
+  padding: 8px;
 }
 
 .header {
-    display: grid;
-    grid-column: 1 / span 2;
-    grid-row: 1;
-    grid-template-columns: 2fr 1fr;
-    padding: 16px;
-    gap: 32px;
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  grid-template-columns: 2fr 1fr;
+  padding: 16px;
+  gap: 32px;
 }
 
 .mainBody {
-    /* background-color: rgb(234, 233, 233); */
-background: linear-gradient(298deg, rgba(250,223,82,1) 30%, rgba(0,212,255,1) 100%);
-   display: grid;
-    grid-template-columns: 2fr 1fr;
+  background: linear-gradient(
+    298deg,
+    rgba(250, 223, 82, 1) 30%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .projects {
-    display:grid;
-    grid-row: 1 / 3;
+  display: grid;
+  grid-row: 1 / 3;
 }
 
 h2 {
-font-size: 18px;
-margin-left: 16px;
-margin-top: 16px;
+  font-size: 18px;
+  margin-left: 16px;
+  margin-top: 16px;
 }
 
 .projectSection {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: grid;
+  place-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .projectSection > div {
-    height: 200px;
-    padding: 42px;
-    border-left: 10px solid gold;
-    font-size: 16px;
-    font-weight: 900;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 4px;
+  /* height: 200px; */
+  padding: 42px;
+  border-left: 10px solid gold;
+  font-size: 16px;
+  font-weight: 900;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
 }
 
 .projectSection > div > p {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .announcements {
-    display: flex;
-    flex-direction: column;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  font-weight: 900;
 }
 
-.trendGroup, .annGroup {
-    flex: 1;
+.annGroup > div > p {
+    font-weight: 300;
+}
+
+.trendGroup,
+.annGroup {
+  flex: 1;
+  font-weight: 900;
 }
 
 .trendGroup > div {
-    /* margin: 10%; */
-    padding: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.trendGroup > div > img {
+    width: 38px;
 }
 
 .annGroup > div {
-    padding: 16px;
-   /* padding-top: 32px; */
-   padding-bottom: 32px;
-   border-bottom: 1px solid red;
-   margin: 10%;
+  padding: 16px;
+  padding-bottom: 32px;
+  margin: 10%;
+}
+
+#annBorder {
+    border-bottom: 2px solid gold;
 }
 
 .trending {
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.projectSection > div, .trendGroup, .annGroup {
-   display: grid;
-    background-color: white;
-    border-radius: 16px;
-    /* gap: 8px; */
-    margin: 16px;
-    box-shadow: 9px 3px 7px 2px rgba(0, 0, 0, 1);
+.projectSection > div,
+.trendGroup,
+.annGroup {
+  display: grid;
+  background-color: white;
+  border-radius: 16px;
+  /* gap: 8px; */
+  margin: 16px;
+  box-shadow: 9px 3px 7px 2px rgba(0, 0, 0, 1);
 }
 
 .dashboard {
-    padding: 16px;
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-    align-items: start;
-    gap: 8px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  align-items: start;
+  gap: 8px;
 }
 
 .dashboard > img {
-    height: 36px;
+  height: 36px;
 }
 
-.firstGroup, .secondGroup {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    place-content: center;
-    gap: 16px;
+.firstGroup,
+.secondGroup {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  place-content: start;
+  gap: 16px;
 }
 
-.firstGroup > img, .secondGroup > img {
-    position: relative;
-    bottom: 10px;
-    height: 36px;
+.firstGroup > img,
+.secondGroup > img {
+  position: relative;
+  bottom: 10px;
+  height: 36px;
 }
 
 button {
-    padding: 8px;
-    width: 75px;
-    height: 40px;
-    border-radius: 15px;
-    background-color: rgb(101, 160, 224);
-    color: white;
-    flex: 1;
+  padding: 8px;
+  width: 75px;
+  height: 40px;
+  border: 5px solid black;
+  border-radius: 15px;
+  background-color: #7f1d1d;
+  color: gold;
+  flex: 1;
 }
 
 .searchBar {
-    display: flex;
-    gap: 4px;
-    padding-left: 16px;
+  display: flex;
+  gap: 4px;
+  padding-left: 16px;
 }
 
 .searchBar > img {
-    width: 30px;
+  width: 30px;
 }
 
 input {
-    display: flex;
-    flex: 1;
+  display: flex;
+  flex: 1;
+  border-radius: 10px;
 }
 
 .userInfo > img {
-    width: 30px;
+  width: 30px;
 }
 
 .userInfo {
-    display: flex;
-    place-content: space-around;
+  display: flex;
+  place-content: space-around;
 }
 
 .userInfo > p {
-    display: grid;
-    place-content: center;
-    font-weight: 900;
+  display: grid;
+  place-content: center;
+  font-weight: 900;
 }
 
 .buttons {
-    display: flex;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 8px;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
 }
 
 .header-lower {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 16px;
 }
 
 .welcomeInfo {
-    display: flex;
-    gap: 16px;
-    padding-left: 16px;
+  display: flex;
+  gap: 16px;
+  padding-left: 16px;
 }
 
 .welcomeInfo > img {
-    grid-column: 1;
-    width: 50px;
+  grid-column: 1;
+  width: 50px;
 }
 
 .paraUser {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .actions {
-    display: flex;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: flex-end;
-    gap: 1rem;
-    padding-top: 2.5rem;
-    padding-bottom: 1rem;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
 }
 
 .actions > img {
-    width: 30px;
+  width: 30px;
+}
+
+img, button {
+    cursor: pointer;
 }
