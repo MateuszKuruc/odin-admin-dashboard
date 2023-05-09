@@ -82,7 +82,7 @@ h2 {
   display: flex;
   flex-direction: column;
   height: auto;
-  font-weight: 900;
+  font-weight: 900
 }
 
 .annGroup > div > p {
@@ -93,6 +93,7 @@ h2 {
 .annGroup {
   flex: 1;
   font-weight: 900;
+  font-size: 18px;
 }
 
 .trendGroup > div {
@@ -241,6 +242,42 @@ input {
   width: 30px;
 }
 
-img, button {
+button {
     cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.15);
+  background-color: gold;
+  color: black;
+}
+
+.changeColor:hover {
+  color: gold;
+}
+
+.actions > img:hover, .actions > a:hover {
+  transform: scale(1.3);
+  background: gold;
+  border-radius: 50%;
+}
+
+a:active {
+  color: gold;
+}
+
+a:visited {
+  color: #7f1d1d;
+}
+
+a:link {
+  color: rgb(202, 149, 149);
+}
+
+.welcomeInfo > img:hover, .userInfo > img:hover {
+  transform: scale(1.4);
+}
+
+.userInfo > p:hover {
+  transform: scale(1.2);
 }
