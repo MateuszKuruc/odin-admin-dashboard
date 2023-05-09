@@ -104,13 +104,25 @@ h2 {
 }
 
 .trendGroup > div > img {
-    height: 38px;
+    width: 38px;
 }
 
 .annGroup > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   padding: 16px;
   padding-bottom: 32px;
   margin: 10%;
+}
+.annGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.annGroup > div > p {
+  font-size: 16px;
+  font-style:italic;
 }
 
 #annBorder {
