@@ -260,9 +260,15 @@ button:hover {
   transition: 0.3s ease-in-out;
 }
 
+.changeColor {
+  font-size: 22px;
+  font-weight: bold;
+}
+
 .changeColor:hover {
   color: gold;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .actions > img:hover,
