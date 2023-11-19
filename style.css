@@ -175,7 +175,7 @@ button {
   padding: 8px;
   width: 75px;
   height: 40px;
-  border: 5px solid black;
+  border: 3px solid black;
   border-radius: 15px;
   background-color: #7f1d1d;
   color: gold;
@@ -254,20 +254,22 @@ button {
 }
 
 button:hover {
-  transform: scale(1.15);
+  transform: scale(1.05);
   background-color: gold;
   color: black;
+  transition: 0.3s ease-in-out;
 }
 
 .changeColor:hover {
   color: gold;
+  transition: 0.3s ease-in-out;
 }
 
 .actions > img:hover,
 .actions > a:hover {
   transform: scale(1.3);
-  background: gold;
   border-radius: 50%;
+  transition: 0.3s ease-in-out;
 }
 
 a:active {
@@ -285,10 +287,12 @@ a:link {
 .welcomeInfo > img:hover,
 .userInfo > img:hover {
   transform: scale(1.4);
+  transition: 0.3s ease-in-out;
 }
 
 .userInfo > p:hover {
   transform: scale(1.2);
+  transition: 0.3s ease-in-out;
 }
 
 .actions > img {
@@ -299,4 +303,10 @@ a:link {
 .actions > a {
   display: grid;
   align-self: end;
+}
+
+.buttonText {
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
 }
