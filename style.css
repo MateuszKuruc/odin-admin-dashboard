@@ -202,12 +202,15 @@ input {
 }
 
 .userInfo > img {
-  width: 30px;
+  /* width: 30px; */
+  /* min-width: 40px; */
+  width: 40px;
 }
 
 .userInfo {
   display: flex;
-  place-content: space-around;
+  /* place-content: space-around; */
+  justify-content: space-around;
 }
 
 .userInfo > p {
